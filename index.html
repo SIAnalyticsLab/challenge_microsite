@@ -25,6 +25,7 @@
       flex-wrap: wrap;
       padding: 1rem 0.5rem;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: relative;
     }
     nav a {
       color: white;
@@ -36,6 +37,23 @@
     }
     nav a:hover {
       background-color: rgba(255,255,255,0.15);
+    }
+
+    /* --- HOME ICON --- */
+    .home-icon {
+      position: absolute;
+      left: 1rem;
+      top: 0.8rem;
+      font-size: 1.5rem;
+    }
+    .home-icon a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+      transition: transform 0.2s ease-in-out;
+    }
+    .home-icon a:hover {
+      transform: scale(1.2);
     }
 
     /* --- CONTENT --- */
@@ -68,17 +86,21 @@
       color: #0a66c2;
       text-decoration: none;
     }
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 
 <body>
   <!-- 🧭 Navigation Bar -->
   <nav>
-    <a href="https://sianalyticslab.github.io/">Home</a>
-    <a href="https://sianalyticslab.github.io/installing_rstudio/">RStudio</a>
-    <a href="https://sianalyticslab.github.io/installing_vscode/">VS Code</a>
-    <a href="https://sianalyticslab.github.io/installing_powerbi/">Power BI</a>
-    <a href="https://quarto.org/docs/dashboards/" target="_blank">Quarto Dashboards</a>
+    <div class="home-icon">
+      <a href="https://sianalyticslab.github.io/" title="Back to Home" target="_blank">🏠</a>
+    </div>
+    <a href="https://sianalyticslab.github.io/installing_rstudio/" target="_blank">RStudio</a>
+    <a href="https://sianalyticslab.github.io/installing_vscode/" target="_blank">VS Code</a>
+    <a href="https://sianalyticslab.github.io/installing_powerbi/" target="_blank">Power BI</a>
   </nav>
 
   <main>
@@ -88,7 +110,7 @@
 
     <h2>🧱 Getting Started with Quarto Dashboards</h2>
     <ul>
-      <li><a href="https://quarto.org/docs/dashboards/">Official Quarto Dashboards Guide</a></li>
+      <li><a href="https://quarto.org/docs/dashboards/" target="_blank">Official Quarto Dashboards Guide</a></li>
       <li>Quarto Dashboards 1: Dashboard Components <em>(Video Demo — coming soon)</em></li>
       <li>Quarto Dashboards 2: Sample Dashboard with Gapminder Data <em>(Video Demo — coming soon)</em></li>
       <li>Quarto Dashboards 3: Publishing Your Dashboard <em>(Video Demo — coming soon)</em></li>
@@ -96,9 +118,9 @@
 
     <h2>🧩 Installation Guides</h2>
     <ul>
-      <li><strong>Python:</strong> <a href="https://sianalyticslab.github.io/installing_vscode/">Installing and Using VS Code</a></li>
-      <li><strong>R:</strong> <a href="https://sianalyticslab.github.io/installing_rstudio/">Installing and Using RStudio</a></li>
-      <li><strong>Power BI:</strong> <a href="https://sianalyticslab.github.io/installing_powerbi/">Installing and Using Power BI Desktop</a></li>
+      <li><strong>Python:</strong> <a href="https://sianalyticslab.github.io/installing_vscode/" target="_blank">Installing and Using VS Code</a></li>
+      <li><strong>R:</strong> <a href="https://sianalyticslab.github.io/installing_rstudio/" target="_blank">Installing and Using RStudio</a></li>
+      <li><strong>Power BI:</strong> <a href="https://sianalyticslab.github.io/installing_powerbi/" target="_blank">Installing and Using Power BI Desktop</a></li>
     </ul>
 
     <h2>📅 Challenge Instructions</h2>
@@ -116,5 +138,13 @@
     <br />
     <a href="https://www.linkedin.com/in/dr-olugbenga-asaolu/" target="_blank">Connect with Dr. Olugbenga Asaolu on LinkedIn</a>
   </footer>
+
+  <!-- External Quick Access Link for Quarto Docs -->
+  <div style="text-align:center; margin-bottom:2rem;">
+    <p>
+      📘 <strong>Need the official documentation?</strong>  
+      <a href="https://quarto.org/docs/dashboards/" target="_blank" style="color:#0a66c2; font-weight:600;">Visit Quarto Dashboards →</a>
+    </p>
+  </div>
 </body>
 </html>
